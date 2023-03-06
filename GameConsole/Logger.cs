@@ -51,7 +51,7 @@ class Logger
         {
             Console.WriteLine("\nDidnt find a match");
             Thread.Sleep(1500);
-        UserIdentification();
+            return UserIdentification();
         }
         return username;
     }
