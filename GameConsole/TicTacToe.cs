@@ -197,10 +197,14 @@ namespace GameConsole
             Console.Title = "TicTacToe";
             InitializeBoard();
 
-            while (!gameIsOver)
+            while (true)
             {
                 PrintBoard();
                 Player('X');
+                if (gameIsOver)
+                {
+                    break;
+                }
                 DrawChecker();
                 Player('O');
             }
